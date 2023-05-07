@@ -1,8 +1,11 @@
+import 'package:flame/game.dart' hide Route;
 import 'package:flutter/material.dart';
 import 'package:game_flutter_with_flame/lesson_menu.dart';
+import 'package:game_flutter_with_flame/my_game.dart';
 
 class Routes {
   static const menu = '/';
+  static const lesson01 = '/lesson01';
 
   static Route routes(RouteSettings settings) {
     MaterialPageRoute _buildRoute(Widget widget) {
@@ -12,6 +15,10 @@ class Routes {
     switch (settings.name) {
       case menu:
         return _buildRoute(const LessonMenu());
+      case lesson01:
+        return _buildRoute(GameWidget(
+          game: MyGame(),
+        ));
 
       default:
         throw Exception('Route does not exists');

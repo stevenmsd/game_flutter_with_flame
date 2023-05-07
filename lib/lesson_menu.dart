@@ -13,7 +13,7 @@ class LessonMenu extends StatelessWidget {
         child: ListView(
           children: const [
             SizedBox(height: 32),
-            ButtonItem(title: 'Lesson 1', route: ''),
+            ButtonItem(title: 'Lesson 1', route: '/lesson01'),
           ],
         ),
       )),
