@@ -1,4 +1,3 @@
-import 'package:flame/game.dart' hide Route;
 import 'package:flutter/material.dart';
 import 'package:game_flutter_with_flame/lesson_menu.dart';
 import 'package:game_flutter_with_flame/my_game.dart';
@@ -16,7 +15,7 @@ class Routes {
       case menu:
         return _buildRoute(const LessonMenu());
       case lesson01:
-        return _buildRoute(GameWidget(
+        return _buildRoute(MyGameWidget(
           game: MyGame(),
         ));
 
