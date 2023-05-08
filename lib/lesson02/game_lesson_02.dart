@@ -1,3 +1,4 @@
+import 'package:game_flutter_with_flame/lesson02/Objects/ball.dart';
 import 'package:game_flutter_with_flame/lesson02/Objects/box_kinematic.dart';
 import 'package:game_flutter_with_flame/lesson02/Objects/floor_static.dart';
 import 'package:game_flutter_with_flame/my_game.dart';
@@ -8,5 +9,6 @@ class GameLesson02 extends MyGame {
     super.onLoad();
     add(FloorStatic());
     add(BoxKinematic());
+    add(BallDynamic());
   }
 }
