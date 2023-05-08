@@ -12,7 +12,7 @@ final screenSize = Vector2(1200, 720);
 final worldSize = Vector2(12.8, 7.2);
 
 class MyGame extends Forge2DGame with KeyboardEvents {
-  MyGame() : super(zoom: 100, gravity: Vector2(0, 15));
+  MyGame() : super(zoom: 100, gravity: Vector2(0, 1));
   final totalBodies = TextComponent(position: Vector2(5, 690))
     ..positionType = PositionType.viewport;
   final fps = FpsTextComponent(position: Vector2(5, 665));

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:game_flutter_with_flame/lesson01/game_lesson_01.dart';
 import 'package:game_flutter_with_flame/lesson_menu.dart';
 import 'package:game_flutter_with_flame/my_game.dart';
 
@@ -16,7 +17,7 @@ class Routes {
         return _buildRoute(const LessonMenu());
       case lesson01:
         return _buildRoute(MyGameWidget(
-          game: MyGame(),
+          game: GameLesson01(),
         ));
 
       default:
