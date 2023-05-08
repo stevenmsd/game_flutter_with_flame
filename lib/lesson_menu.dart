@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:game_flutter_with_flame/routes.dart';
 
 class LessonMenu extends StatelessWidget {
   const LessonMenu({super.key});
@@ -13,7 +14,8 @@ class LessonMenu extends StatelessWidget {
         child: ListView(
           children: const [
             SizedBox(height: 32),
-            ButtonItem(title: 'Lesson 1', route: '/lesson01'),
+            ButtonItem(title: 'Lesson 1', route: Routes.lesson01),
+            ButtonItem(title: 'Lesson 2', route: Routes.lesson02),
           ],
         ),
       )),
